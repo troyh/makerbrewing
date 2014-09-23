@@ -1,0 +1,108 @@
+@charset "UTF-8"
+
+$optimism_accent:#a1750c
+$optimism_gold:#FCB813
+$footer_height:80px
+// $textfont:"Gibson-Light","Hoefler Text", Georgia, serif
+// $textfont: "Myriad Pro","Segoe WP","Segoe UI",Segoe,Calibri,Helvetica,Arial
+// $textfont: "Garamond","Georgia","Trebuchet MS" "Lucida Console","Lucida Sans Unicode","Lucida Grande"
+$textfont: "Helvetica Neue",Helvetica, Arial, "sans-serif"
+// $textfont: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif"
+// $boldtextfont: "Gibson-SemiBold"
+// $sansseriffont:"Gibson-Regular",Helvetica
+
+*
+  font-family: $textfont
+  font-size: 1.05em
+
+.navbar-default
+  background-color: $optimism_gold
+  background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%)
+  background-image:         linear-gradient(to bottom, #fff 0%, #f8f8f8 100%)
+  // filter: progid:DXImageTransform.Microsoft.gradient(
+  //   startColorstr=$optimism_accent,
+  //   endColorstr=$optimism_gold,
+  //   GradientType=0)
+  a, a:link
+    text-transform: uppercase
+    color: $optimism_accent
+
+.navlogo
+  position: absolute
+  margin: 0 auto
+  top: 0
+  left: 0
+  right: 0
+  height: 150px
+  width: 125px
+  background-color: $optimism_gold
+  background-image: url("/img/logo2.png")
+  background-repeat: no-repeat
+  background-position: 12px 25px
+
+#homejumbotron
+  margin: 0 0 6em 0
+  padding: 3em
+  height: 17em
+  // background-color: rgba(252,203,19, .15)
+  background-color: white
+
+#main-content
+  margin-top: 100px
+
+a, a:link
+  color: $optimism_accent
+  cursor: pointer
+
+body
+  padding-top: 60px
+
+table
+  tfoot, tbody
+    th
+      border-top: 1px solid #DDD
+
+footer
+  background: $optimism_gold
+  padding: 1em 0.5em 0 0.5em
+  padding-bottom: 30px
+  font-size: 1em
+  line-height: 1.2em
+  address
+    line-height: 1.2em
+
+article
+  margin: 0 0 5em 0
+  .post-content
+    line-height: 1.6em
+  .date
+    position: relative
+    padding: 0
+    margin-bottom: -1em
+    color: rgba(0,0,0,0.25)
+  h1, h2
+    font-weight: bold
+  img
+    width: 100%
+    margin: 1em 0 1em 0
+
+#optimismquotes
+  // color: $optimism_accent
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+  .quote:before
+    content: "\201C"
+  .quote:after
+    content: "\201D"
+  .quote
+    font-size: 1.5em
+    line-height: 120%
+  .byline:before
+    content: "– "
+  .byline
+    text-align: right
+    position: relative
+    right: 20%

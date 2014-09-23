@@ -1,0 +1,21 @@
+--- yaml
+layout: 'default'
+title: 'Home'
+---
+
+h1.text-center A brewery under construction in Seattle. Opening early 2015.
+
+.jumbotron.text-center#homejumbotron
+  #optimismquotes
+
+each doc in getCollection('news').toJSON().slice(0,3)
+  article.text-center
+    .date= doc.date.toDateString()
+    h2
+      a(href=doc.url)= doc.title
+    div.text-left !{getPostAbstract(doc.contentRenderedWithoutLayouts)}
+    - if (hasReadMore(doc.contentRenderedWithoutLayouts))
+      a.btn.btn-default(href="#{doc.url}") Continue reading...
+
+.text-center
+  a.btn.btn-default(href="/news") Older news...

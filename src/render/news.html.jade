@@ -1,0 +1,13 @@
+---
+title: News
+layout: page
+---
+
+each doc in getCollection('news').toJSON()
+  article.text-center
+    .date= doc.date.toDateString()
+    h2
+      a(href=doc.url)= doc.title
+    div.text-left !{getPostAbstract(doc.contentRenderedWithoutLayouts)}
+    - if (hasReadMore(doc.contentRenderedWithoutLayouts))
+      a.btn.btn-default(href="#{doc.url}") Continue reading...
