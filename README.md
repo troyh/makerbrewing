@@ -1,4 +1,4 @@
-Optimism Brewing Co.'s main web site, built with [DocPad](http://docpad.org).
+Maker Brewing Co.'s main web site, built with [DocPad](http://docpad.org).
 
 # Install
 

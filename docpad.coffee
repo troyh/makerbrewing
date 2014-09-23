@@ -12,7 +12,7 @@ docpadConfig =
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://optimismbrewing.com"
+      url: "http://makerbrewing.com"
 
       # Here are some old site urls that you would like to redirect from
       oldUrls: [
@@ -21,7 +21,7 @@ docpadConfig =
       ]
 
       # The default title of our website
-      title: "Optimism Brewing Co."
+      title: "Maker Brewing Co."
 
       # The website description (for SEO)
       description: """
@@ -37,10 +37,10 @@ docpadConfig =
       author: "Troy Hakala"
 
       # The website author's email
-      email: "troy@optimismbrewing.com"
+      email: "gay@makerbrewing.com"
 
       # Your company's name
-      copyright: "©2014 Optimism Brewing Co."
+      copyright: "©2014 Maker Brewing Co."
 
 
     # Helper Functions
